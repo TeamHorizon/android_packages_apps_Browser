@@ -1595,6 +1595,10 @@ public class Controller
         boolean showDebugSettings = mSettings.isDebugEnabled();
         final MenuItem uaSwitcher = menu.findItem(R.id.ua_desktop_menu_id);
         uaSwitcher.setChecked(isDesktopUa);
+
+        final MenuItem fullscreen = menu.findItem(R.id.fullscreen_menu_id);
+        fullscreen.setChecked(mUi.isFullscreen());
+
         menu.setGroupVisible(R.id.LIVE_MENU, isLive);
         menu.setGroupVisible(R.id.SNAPSHOT_MENU, !isLive);
         menu.setGroupVisible(R.id.COMBO_MENU, false);
@@ -1732,6 +1736,9 @@ public class Controller
                 toggleUserAgent();
                 break;
 
+            case R.id.fullscreen_menu_id:
+                toggleFullscreen();
+
             case R.id.window_one_menu_id:
             case R.id.window_two_menu_id:
             case R.id.window_three_menu_id:
@@ -1829,6 +1836,11 @@ public class Controller
         WebView web = getCurrentWebView();
         mSettings.toggleDesktopUseragent(web);
         web.loadUrl(web.getOriginalUrl());
+    }
+
+    @Override
+    public void toggleFullscreen() {
+        mUi.setFullscreen(!mUi.isFullscreen());
     }
 
     @Override
@@ -2907,11 +2919,18 @@ public class Controller
 
     @Override
     public void startVoiceRecognizer() {
-        Intent voice = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-        voice.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, 
-                RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-        voice.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 1);
-        mActivity.startActivityForResult(voice, VOICE_RESULT);
+        try{
+            Intent voice = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+            voice.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                    RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+            voice.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 1);
+            mActivity.startActivityForResult(voice, VOICE_RESULT);
+        }
+        catch(android.content.ActivityNotFoundException ex)
+        {
+            //if could not find the Activity
+            Log.e(LOGTAG, "Could not start voice recognizer activity");
+        }
     }
 
     @Override
