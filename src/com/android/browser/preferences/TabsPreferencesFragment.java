@@ -17,29 +17,20 @@
 package com.android.browser.preferences;
 
 import android.os.Bundle;
-import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
-import android.preference.PreferenceScreen;
 
-import com.android.browser.R;
-import com.android.browser.PreferenceKeys;
 import com.android.browser.BrowserSettings;
+import com.android.browser.PreferenceKeys;
+import com.android.browser.R;
 import com.android.browser.search.SearchEngine;
 
-public class LabPreferencesFragment extends PreferenceFragment {
+public class TabsPreferencesFragment extends PreferenceFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Load the XML preferences file
-        addPreferencesFromResource(R.xml.lab_preferences);
-
-        if (!BrowserSettings.isWebGLAvailable()) {
-            CheckBoxPreference webGL = (CheckBoxPreference)
-                findPreference(PreferenceKeys.PREF_ENABLE_WEBGL);
-            PreferenceScreen screen = getPreferenceScreen();
-            screen.removePreference(webGL);
-        }
+        addPreferencesFromResource(R.xml.tabs_preferences);
     }
 }

@@ -111,6 +111,8 @@
     <string name="contextmenu_openlink" msgid="7237961252214188935">"打开"</string>
     <string name="contextmenu_openlink_newwindow" msgid="1205313604181761403">"在新标签页中打开"</string>
     <string name="contextmenu_openlink_newwindow_background" msgid="4690381019116746687">"在新的后台标签页中打开"</string>
+    <string name="contextmenu_openlink_incognito_newwindow">在新隐身标签页中打开</string>
+    <string name="contextmenu_openlink_incognito_newwindow_background">在新的后台隐身标签页中打开</string>
     <string name="contextmenu_savelink" msgid="5508554930832538184">"保存链接"</string>
     <string name="contextmenu_sharelink" msgid="5392275392280130331">"分享链接"</string>
     <string name="contextmenu_copy" msgid="398860586635404030">"复制"</string>
@@ -144,6 +146,8 @@
     <string name="pref_content_homepage" msgid="3324574611613105696">"设置主页"</string>
     <string name="pref_content_search_engine" msgid="1620101310821644144">"设置搜索引擎"</string>
     <string name="pref_content_search_engine_summary" msgid="304003941861818133">"选择搜索引擎"</string>
+    <string name="pref_content_uastring">用户代理</string>
+    <string name="pref_content_uastring_summary">请求访问为其它类型设备显示的网页</string>
     <string name="pref_set_homepage_to" msgid="7838684355145561242">"设置为"</string>
   <string-array name="pref_homepage_choices">
     <item msgid="844041670142910837">"当前页"</item>
@@ -276,6 +280,10 @@
     <string name="pref_use_instant_search_summary" msgid="839320474961917522">"借助 Google 即搜即得，您可以在使用 Google 搜索时一边键入内容一边查看结果（此功能可能会增加数据使用量）。"</string>
     <string name="pref_lab_fullscreen" msgid="8173609016657987973">"全屏"</string>
     <string name="pref_lab_fullscreen_summary" msgid="7694738112219376740">"使用全屏模式可隐藏状态栏"</string>
+    <string name="pref_lab_webgl">WebGL</string>
+    <string name="pref_lab_webgl_summary">启用 WebGL</string>
+    <string name="pref_lab_websockets">WebSockets</string>
+    <string name="pref_lab_websockets_summary">启用 WebSockets</string>
     <string name="pref_data_title" msgid="7255058703417796578">"带宽管理"</string>
     <string name="pref_data_preload_title" msgid="4479320472980292873">"搜索结果预加载"</string>
   <string-array name="pref_data_preload_choices">
@@ -399,4 +407,10 @@
     <string name="accessibility_state_frozen" msgid="8041539250447035570">"已保存的网页"</string>
     <string name="accessibility_transition_navscreen" msgid="2734915619351519547">"标签页管理"</string>
     <string name="accessibility_button_bookmarks_folder_up" msgid="9179389954714270505">"上一个文件夹"</string>
+
+    <string name="tab_settings_title">标签设置</string>
+    <string name="pref_max_open_tabs">标签页数量</string>
+    <string name="pref_max_open_tabs_summary">设置浏览器最多允许打开的标签页数量</string>
+    <string name="pref_restore_tabs">还原标签页</string>
+    <string name="pref_restore_tabs_summary">当浏览器崩溃或强行结束进程时，再次重新启动时还原上一次打开的标签页</string>
 </resources>

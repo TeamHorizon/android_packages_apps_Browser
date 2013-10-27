@@ -83,6 +83,7 @@ public interface PreferenceKeys {
     // ----------------------
     static final String PREF_ENABLE_QUICK_CONTROLS = "enable_quick_controls";
     static final String PREF_FULLSCREEN = "fullscreen";
+    static final String PREF_ENABLE_WEBGL = "enable_webgl";
     static final String PREF_ENABLE_WEBSOCKETS = "enable_websockets";
 
     // ----------------------
@@ -106,6 +107,12 @@ public interface PreferenceKeys {
     static final String PREF_DATA_PRELOAD = "preload_when";
     static final String PREF_LINK_PREFETCH = "link_prefetch_when";
     static final String PREF_LOAD_IMAGES = "load_images";
+
+    // ----------------------
+    // Keys for tabs_preferences.xml
+    // ----------------------
+    static final String PREF_MAX_TABS = "max_open_tabs";
+    static final String PREF_RESTORE_TABS = "restore_tabs_on_launch";
 
     // ----------------------
     // Keys for browser recovery
