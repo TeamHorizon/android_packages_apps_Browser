@@ -26,7 +26,6 @@ import android.webkit.ValueCallback;
 import android.widget.Toast;
 
 import java.io.File;
-import java.util.Vector;
 
 /**
  * Handle the file upload callbacks from WebView here

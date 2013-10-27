@@ -17,7 +17,6 @@
 package com.android.browser;
 
 import android.content.Context;
-import android.database.DataSetObserver;
 import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;

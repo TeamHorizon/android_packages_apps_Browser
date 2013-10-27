@@ -30,7 +30,6 @@ import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 
-import java.util.List;
 
 /**
  * WebView aspect of the controller

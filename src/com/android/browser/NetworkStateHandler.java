@@ -26,8 +26,6 @@ import android.net.NetworkInfo;
 import android.webkit.WebView;
 import android.webkit.WebViewClassic;
 
-import com.android.browser.BrowserSettings;
-
 /**
  * Handle network state changes
  */

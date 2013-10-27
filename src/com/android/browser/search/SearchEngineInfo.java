@@ -17,7 +17,6 @@ package com.android.browser.search;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.content.res.Resources.NotFoundException;
 import android.text.TextUtils;
 import android.util.Log;
 

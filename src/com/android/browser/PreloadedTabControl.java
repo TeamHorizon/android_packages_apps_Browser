@@ -20,7 +20,6 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import java.util.Map;
-import java.util.regex.Pattern;
 
 /**
  * Class to manage the controlling of preloaded tab.

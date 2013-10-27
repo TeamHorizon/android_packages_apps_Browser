@@ -17,15 +17,9 @@ package com.android.browser.search;
 
 import com.android.browser.R;
 
-import android.app.SearchManager;
-import android.content.ComponentName;
 import android.content.Context;
-import android.content.pm.ActivityInfo;
-import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.preference.ListPreference;
 import android.util.AttributeSet;
-import android.util.Log;
 
 import java.util.ArrayList;
 

@@ -17,11 +17,8 @@
 package com.android.browser.preferences;
 
 import android.os.Bundle;
-import android.preference.Preference;
 import android.preference.PreferenceFragment;
 
-import com.android.browser.BrowserSettings;
-import com.android.browser.PreferenceKeys;
 import com.android.browser.R;
 import com.android.browser.search.SearchEngine;
 

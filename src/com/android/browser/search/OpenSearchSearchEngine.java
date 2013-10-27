@@ -18,7 +18,6 @@ package com.android.browser.search;
 import com.android.browser.R;
 
 import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
