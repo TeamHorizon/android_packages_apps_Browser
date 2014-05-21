@@ -795,12 +795,14 @@
 
     <!-- The default homepage. -->
     <string name="homepage_base" translatable="false">
-        https://www.google.com/webhp?client={CID}&amp;source=android-home</string>
+        http://www.xenonhd.com/</string>
 
     <!-- Bookmarks -->
     <string-array name="bookmarks" translatable="false">
         <item>Google</item>
         <item>http://www.google.com/</item>
+	<item>XenonHD</item>
+        <item>http://www.xenonhd.com/</item>
         <item>Picasa</item>
         <item>http://picasaweb.google.com/</item>
         <item>Yahoo!</item>
